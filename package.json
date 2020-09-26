@@ -1,0 +1,29 @@
+{
+  "name": "artificial-satellites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infamous55/Satellites.git"
+  },
+  "author": "infamous55",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infamous55/Satellites/issues"
+  },
+  "homepage": "https://github.com/infamous55/Satellites#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

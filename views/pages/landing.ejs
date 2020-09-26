@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sateliti Artificiali</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+  </head>
+  <body>
+    <div id="left">
+      <span id="hamburger">&#9776;</span>
+      <h1 class="hidden">Sateliti Artificiali</h1>
+      <div id="main-content">
+        <div id="aligner">
+          <img src="assets/reversed.png" />
+        </div>
+        <h1>Sateliti Artificiali</h1>
+      </div>
+      <p>Numarul de vizualizari: <span class="number">12345</span></p>
+      <div id="mobile-background"></div>
+    </div>
+
+    <div id="right">
+      <p>Liceul Teoretic "Grigore Antipa" Botosani</p>
+      <p>contact@email.com</p>
+    </div>
+
+    <div class="navigation">
+      <span id="close">&times;</span>
+      <div class="navigation-content">
+        <a href="#">Sateliti Artificiali</a><br />
+        <a href="#">Introducere</a><br />
+        <a href="#">Stiinta din spatele satelitilor</a><br />
+        <a href="#">Scurta istorie a satelitilor</a><br />
+        <a href="#">Clasificare</a><br />
+        <a href="#">Conferinta video</a><br />
+        <a href="#">Incheiere</a><br />
+        <a href="#">Testeaza-ti cunostintele</a>
+      </div>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const close = document.getElementById('close');
+
+      hamburger.addEventListener('click', () => {
+        document.querySelector('.navigation').style.width = '100%';
+      });
+
+      close.addEventListener('click', () => {
+        document.querySelector('.navigation').style.width = '0%';
+      });
+    </script>
+  </body>
+</html>
