@@ -1,9 +1,11 @@
 const express = require('express');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
 dotenv.config();
 
 if (process.env.NODE_ENV === 'development') {
