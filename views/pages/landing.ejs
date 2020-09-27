@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('_header.ejs') %>
     <title>Sateliti Artificiali</title>
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/landing.css" />
   </head>
   <body>
     <div id="left">
       <span id="hamburger">&#9776;</span>
-      <h1 class="hidden">Sateliti Artificiali</h1>
+      <h1 class="mobile-title">Sateliti Artificiali</h1>
       <div id="main-content">
-        <div id="aligner">
+        <div id="helper">
           <img src="assets/reversed.png" />
         </div>
         <h1>Sateliti Artificiali</h1>
@@ -26,19 +24,7 @@
       <p>contact@email.com</p>
     </div>
 
-    <div class="navigation">
-      <span id="close">&times;</span>
-      <div class="navigation-content">
-        <a href="#">Sateliti Artificiali</a><br />
-        <a href="#">Introducere</a><br />
-        <a href="#">Stiinta din spatele satelitilor</a><br />
-        <a href="#">Scurta istorie a satelitilor</a><br />
-        <a href="#">Clasificare</a><br />
-        <a href="#">Conferinta video</a><br />
-        <a href="#">Incheiere</a><br />
-        <a href="#">Testeaza-ti cunostintele</a>
-      </div>
-    </div>
+    <%- include('_navigation.ejs') %>
 
     <script>
       const hamburger = document.getElementById('hamburger');

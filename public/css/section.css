@@ -1,0 +1,271 @@
+#hamburger {
+  font-size: 2rem;
+  color: #f2efe9;
+  cursor: pointer;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0%;
+  height: 100%;
+  transition: 0.5s;
+  background-color: rgba(37, 38, 39, 0.9);
+  overflow: hidden;
+}
+
+#close {
+  font-size: 3rem;
+  color: #f2efe9;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+#close:hover {
+  color: #bfb48f;
+}
+
+.navigation-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 20%;
+}
+
+.navigation-content a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #f2efe9;
+  margin-bottom: 0.5rem;
+  border-bottom: solid 6px rgba(37, 38, 39, 0);
+}
+
+.navigation-content a:hover {
+  border-bottom: solid 6px #bfb48f;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation-content a {
+    font-size: 2rem;
+  }
+  .navigation-content {
+    top: 25%;
+  }
+}
+
+.colored-section {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 35vw;
+  background-color: #564e58;
+}
+
+.right p {
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+}
+
+.left p {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 35;
+  padding: 1.5rem;
+}
+
+#line {
+  height: 40%;
+  border-left: solid 3px #f2efe9;
+  margin-right: 1rem;
+}
+
+.circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #f2efe9;
+  border: solid 3px #252627;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  background-color: #904e55;
+}
+
+.page-indicator {
+  font-size: 6.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+}
+
+.page-indicator::first-letter {
+  color: #252627;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.content h3 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.title {
+  border-bottom: solid 8px #904e55;
+}
+
+.imagine {
+  position: absolute;
+  z-index: -1;
+  top: 15%;
+  left: 50%;
+  max-width: 500px;
+  height: auto;
+}
+
+.content p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.mobile-content {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .right {
+    display: none;
+  }
+  .colored-section {
+    display: none;
+  }
+  html {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    display: none;
+  }
+  .mobile-content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem auto;
+  }
+  .mobile-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  .mobile-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .mobile-content h3,
+  .title {
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+  }
+  .mobile-content p {
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-content h3,
+  .title {
+    font-size: 2.5rem;
+  }
+  .mobile-content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .mobile-content p {
+    font-size: 1rem;
+  }
+  .mobile-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+}

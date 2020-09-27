@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('_header.ejs') %>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/section.css" />
+  </head>
+  <body>
+    <span id="hamburger">&#9776;</span>
+    <%- include('_navigation.ejs') %>
+    <div class="wrapper">
+      <div class="colored-section"></div>
+      <div class="right">
+        <p>Liceul Teoretic "Grigore Antipa" Botosani</p>
+        <div id="line"></div>
+        <span class="page-indicator">01</span>
+        <div id="circles">
+          <div class="circle highlight"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h3><span class="title">Ce sunt satelitii?</span></h3>
+        <p>
+          Un satelit este un corp ceresc care graviteaza in jurul unei planete
+          sau in jurul unui obiect mai mic. Pamantul este un satelit deoarece
+          acesta orbiteaza in jurul soarelui, iar luna de asemenea orbiteaza in
+          jurul Pamantului. Acestia sunt sateliti naturali.
+        </p>
+      </div>
+      <img class="imagine" src="assets/ground-satellite.png" />
+      <div class="left">
+        <p>contact@email.com</p>
+      </div>
+    </div>
+
+    <div class="mobile-content">
+      <h3>
+        <span class="title">Ce sunt satelitii?</span>
+      </h3>
+      <img class="mobile-imagine" src="assets/ground-satellite.png" />
+      <p>
+        Un satelit este un corp ceresc care graviteaza in jurul unei planete sau
+        in jurul unui obiect mai mic. Pamantul este un satelit deoarece acesta
+        orbiteaza in jurul soarelui, iar luna de asemenea orbiteaza in jurul
+        Pamantului. Acestia sunt sateliti naturali.
+      </p>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const close = document.getElementById('close');
+
+      hamburger.addEventListener('click', () => {
+        document.querySelector('.navigation').style.width = '100%';
+      });
+
+      close.addEventListener('click', () => {
+        document.querySelector('.navigation').style.width = '0%';
+      });
+    </script>
+  </body>
+</html>

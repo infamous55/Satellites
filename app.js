@@ -11,10 +11,15 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.render('pages/landing');
+});
+
+app.get('/introducere', (req, res) => {
+  res.render('pages/introduction');
 });
 
 app.listen(process.env.PORT, () => {
