@@ -130,22 +130,16 @@
             document.body
           ).scrollTop;
         let pctScrolled = Math.floor((scrollTop / trackLength) * 100);
-        if (pctScrolled >= 75) {
-          circles[3].classList.add('highlight');
-          number.innerHTML = '04';
-        } else circles[3].classList.remove('highlight');
-        if (pctScrolled >= 50 && pctScrolled < 75) {
-          circles[2].classList.add('highlight');
-          number.innerHTML = '03';
-        } else circles[2].classList.remove('highlight');
-        if (pctScrolled >= 25 && pctScrolled < 50) {
-          circles[1].classList.add('highlight');
-          number.innerHTML = '02';
-        } else circles[1].classList.remove('highlight');
-        if (pctScrolled >= 0 && pctScrolled < 25) {
-          circles[0].classList.add('highlight');
-          number.innerHTML = '01';
-        } else circles[0].classList.remove('highlight');
+        for (let i = 0; i < 4; i++) {
+          if (pctScrolled >= i * 25 && pctScrolled < (i + 1) * 25) {
+            circles[i].classList.add('highlight');
+            number.innerHTML = `0${i + 1}`;
+          } else circles[i].classList.remove('highlight');
+          if (i === 3 && pctScrolled === 100) {
+            circles[i].classList.add('highlight');
+            number.innerHTML = `0${i + 1}`;
+          }
+        }
       });
     </script>
   </body>

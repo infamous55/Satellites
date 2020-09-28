@@ -28,6 +28,10 @@ app.get('/stiinta-din-spatele-satelitilor', (req, res) => {
   res.render('pages/science');
 });
 
+app.get('/scurta-istorie-a-sateliltior', (req, res) => {
+  res.render('pages/history.ejs');
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`App running on port ${process.env.PORT}`);
 });
