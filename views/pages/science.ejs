@@ -95,6 +95,8 @@
       // scroll indicator
       let winHeight, docHeight, trackLength;
       const circles = document.getElementsByClassName('circle');
+      const number = document.querySelector('.page-indicator');
+      console.log(number);
 
       const getDocHeight = () => {
         return Math.max(
@@ -128,17 +130,22 @@
             document.body
           ).scrollTop;
         let pctScrolled = Math.floor((scrollTop / trackLength) * 100);
-        if (pctScrolled >= 75) circles[3].classList.add('highlight');
-        else circles[3].classList.remove('highlight');
-        if (pctScrolled >= 50 && pctScrolled < 75)
+        if (pctScrolled >= 75) {
+          circles[3].classList.add('highlight');
+          number.innerHTML = '04';
+        } else circles[3].classList.remove('highlight');
+        if (pctScrolled >= 50 && pctScrolled < 75) {
           circles[2].classList.add('highlight');
-        else circles[2].classList.remove('highlight');
-        if (pctScrolled >= 25 && pctScrolled < 50)
+          number.innerHTML = '03';
+        } else circles[2].classList.remove('highlight');
+        if (pctScrolled >= 25 && pctScrolled < 50) {
           circles[1].classList.add('highlight');
-        else circles[1].classList.remove('highlight');
-        if (pctScrolled >= 0 && pctScrolled < 25)
+          number.innerHTML = '02';
+        } else circles[1].classList.remove('highlight');
+        if (pctScrolled >= 0 && pctScrolled < 25) {
           circles[0].classList.add('highlight');
-        else circles[0].classList.remove('highlight');
+          number.innerHTML = '01';
+        } else circles[0].classList.remove('highlight');
       });
     </script>
   </body>
