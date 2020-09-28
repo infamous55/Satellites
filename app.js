@@ -24,6 +24,10 @@ app.get('/introducere', (req, res) => {
   res.render('pages/introduction');
 });
 
+app.get('/stiinta-din-spatele-satelitilor', (req, res) => {
+  res.render('pages/science');
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`App running on port ${process.env.PORT}`);
 });

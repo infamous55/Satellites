@@ -75,6 +75,7 @@
 .right p {
   letter-spacing: 0.3rem;
   font-weight: 300;
+  font-size: 0.5rem;
 }
 
 .left p {
@@ -83,6 +84,7 @@
   left: 1.5rem;
   letter-spacing: 0.3rem;
   font-weight: 300;
+  font-size: 0.5rem;
 }
 
 .right {
