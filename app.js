@@ -51,6 +51,10 @@ app.get('/scurta-istorie-a-sateliltior', (req, res) => {
   res.render('pages/history.ejs');
 });
 
+app.get('/clasificare', (req, res) => {
+  res.render('pages/types.ejs');
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`App running on port ${process.env.PORT}`);
 });

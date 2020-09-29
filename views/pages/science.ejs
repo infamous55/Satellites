@@ -13,7 +13,7 @@
       <div id="line"></div>
       <span class="page-indicator">01</span>
       <div id="circles">
-        <div class="circle"></div>
+        <div class="circle highlight"></div>
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
@@ -96,7 +96,6 @@
       let winHeight, docHeight, trackLength;
       const circles = document.getElementsByClassName('circle');
       const number = document.querySelector('.page-indicator');
-      console.log(number);
 
       const getDocHeight = () => {
         return Math.max(
