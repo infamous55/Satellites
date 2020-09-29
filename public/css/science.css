@@ -188,6 +188,9 @@
   .section p {
     font-size: 1.8rem;
   }
+  .section:nth-child(even) {
+    background-color: #564e58;
+  }
 }
 
 @media screen and (max-width: 800px) {
