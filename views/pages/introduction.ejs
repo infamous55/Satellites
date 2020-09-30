@@ -49,17 +49,6 @@
       </p>
     </div>
 
-    <script>
-      const hamburger = document.getElementById('hamburger');
-      const close = document.getElementById('close');
-
-      hamburger.addEventListener('click', () => {
-        document.querySelector('.navigation').style.width = '100%';
-      });
-
-      close.addEventListener('click', () => {
-        document.querySelector('.navigation').style.width = '0%';
-      });
-    </script>
+    <%- include('_menuScript.ejs') %>
   </body>
 </html>

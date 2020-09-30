@@ -37,7 +37,7 @@
     </div>
     <div class="section" id="second">
       <div class="container">
-        <h3><span class="title">Clasificarea satelitilorr</span></h3>
+        <h3><span class="title">Clasificarea satelitilor</span></h3>
         <p>
           Satelitii naturali se afla in componenta galaxiei noastre de cand s-a
           format universul,dar exista mii de sateliti artificiali, care au fost
@@ -106,20 +106,8 @@
         </p>
       </div>
     </div>
+    <%- include('_menuScript.ejs') %>
     <script>
-      // menu
-      const hamburger = document.getElementById('hamburger');
-      const close = document.getElementById('close');
-
-      hamburger.addEventListener('click', () => {
-        document.querySelector('.navigation').style.width = '100%';
-      });
-
-      close.addEventListener('click', () => {
-        document.querySelector('.navigation').style.width = '0%';
-      });
-
-      // scroll indicator
       let winHeight, docHeight, trackLength;
       const circles = document.getElementsByClassName('circle');
       const number = document.querySelector('.page-indicator');

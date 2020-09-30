@@ -1,0 +1,39 @@
+#first {
+  background: url('../assets/cover.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#highschool {
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+  text-align: end;
+  font-size: 0.5rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+@media screen and (max-width: 1700px) {
+  #highschool {
+    display: none;
+  }
+}
+
+#third {
+  background: url('../assets/cover-2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #f2efe9;
+}

@@ -23,20 +23,6 @@
       <p>Liceul Teoretic "Grigore Antipa" Botosani</p>
       <p>contact@email.com</p>
     </div>
-
-    <%- include('_navigation.ejs') %>
-
-    <script>
-      const hamburger = document.getElementById('hamburger');
-      const close = document.getElementById('close');
-
-      hamburger.addEventListener('click', () => {
-        document.querySelector('.navigation').style.width = '100%';
-      });
-
-      close.addEventListener('click', () => {
-        document.querySelector('.navigation').style.width = '0%';
-      });
-    </script>
+    <%- include('_navigation.ejs') %> <%- include('_menuScript.ejs') %>
   </body>
 </html>

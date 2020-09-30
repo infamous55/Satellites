@@ -55,6 +55,14 @@ app.get('/clasificare', (req, res) => {
   res.render('pages/types.ejs');
 });
 
+app.get('/incheiere', (req, res) => {
+  res.render('pages/ending.ejs');
+});
+
+app.get('*', (req, res) => {
+  res.status(404).render('pages/404.ejs');
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`App running on port ${process.env.PORT}`);
 });
