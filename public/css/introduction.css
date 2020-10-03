@@ -280,3 +280,9 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (max-height: 600px) {
+  .navigation-content {
+    top: 20%;
+  }
+}

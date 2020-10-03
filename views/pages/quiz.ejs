@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('_header.ejs') %>
+    <title>Stiinta din spatele satelitilor</title>
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+  <body>
+    <span id="hamburger">&#9776;</span>
+    <%- include('_navigation.ejs') %>
+
+    <div id="background"></div>
+
+    <p id="highschool">Liceul Teoretic "Grigore Antipa" Botosani</p>
+
+    <div class="content">
+      <h3><span class="title">Testeaza-ti cunostintele</span></h3>
+      <div class="box">
+        <p id="question-number"><strong>Intrebarea 1:</strong></p>
+        <p id="question-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+        </p>
+        <ul id="choice-list">
+          <!-- <li>
+            <input type="radio" name="answer" />
+            <span class="answer">Raspunsul 1</span>
+          </li>
+          <li>
+            <input type="radio" name="answer" />
+            <span class="answer">Raspunsul 2</span>
+          </li>
+          <li>
+            <input type="radio" name="answer" />
+            <span class="answer">Raspunsul 3</span>
+          </li>
+          <li>
+            <input type="radio" name="answer" />
+            <span class="answer">Raspunsul 4</span>
+          </li> -->
+        </ul>
+        <div id="result"></div>
+        <span id="next">Urmatoarea</span>
+      </div>
+    </div>
+
+    <%- include('_menuScript.ejs') %>
+    <script src="javascript/quiz.js"></script>
+  </body>
+</html>

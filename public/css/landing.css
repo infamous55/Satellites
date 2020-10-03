@@ -217,3 +217,15 @@ p {
     background-color: #564e58;
   }
 }
+
+@media screen and (max-height: 600px) {
+  .mobile-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .navigation-content {
+    top: 20%;
+  }
+}

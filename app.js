@@ -59,6 +59,10 @@ app.get('/incheiere', (req, res) => {
   res.render('pages/ending.ejs');
 });
 
+app.get('/testeaza-ti-cunostintele', (req, res) => {
+  res.render('pages/quiz.ejs');
+});
+
 app.get('*', (req, res) => {
   res.status(404).render('pages/404.ejs');
 });
