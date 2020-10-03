@@ -61,7 +61,7 @@ const resetQuiz = () => {
       listItems.forEach((element, index) => {
         if (element.firstElementChild.checked) value = index;
       });
-      if (value) {
+      if (value !== null && value !== undefined) {
         if (value === questions[currentQuestion].correctAnswer)
           correctAnswers++;
         currentQuestion++;
