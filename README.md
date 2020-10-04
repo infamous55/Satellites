@@ -4,5 +4,4 @@ Project in work.
 
 To Do:
 
-- refactor text
-- add quiz
+- add video page

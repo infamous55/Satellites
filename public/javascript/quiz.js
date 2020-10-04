@@ -67,7 +67,7 @@ const resetQuiz = () => {
         currentQuestion++;
 
         if (currentQuestion === questions.length - 1)
-          document.getElementById('next').innerText = 'Verifica!';
+          document.getElementById('next').innerText = 'Verifică!';
         if (currentQuestion < questions.length) displayQuestion();
         else {
           isOver = true;
@@ -77,12 +77,12 @@ const resetQuiz = () => {
             'result'
           ).innerHTML = `<p>${correctAnswers} corecte din ${questions.length}</p>`;
           document.getElementById('question-number').innerText =
-            'Rezultatul tau este:';
-          document.getElementById('next').innerText = 'Mai incearca!';
+            'Rezultatul tău este:';
+          document.getElementById('next').innerText = 'Mai încearcă!';
         }
         console.log(correctAnswers);
       } else {
-        alert('Alege un raspuns.');
+        alert('Alege un răspuns.');
       }
     } else {
       resetQuiz();
