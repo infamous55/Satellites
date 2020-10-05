@@ -1,7 +1,5 @@
 # Sateliti Artificiali
 
-Project in work.
+Almost done.
 
-To Do:
-
-- add video page
+Got to change the README.

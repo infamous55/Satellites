@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('_header.ejs') %>
+    <title>Conferința video</title>
+    <link rel="stylesheet" href="css/video.css" />
+  </head>
+  <body>
+    <span id="hamburger">&#9776;</span>
+    <%- include('_navigation.ejs') %>
+
+    <p id="highschool">Liceul Teoretic "Grigore Antipa" Botoșani</p>
+
+    <div id="background"></div>
+
+    <header>
+      <h3><span class="title">Conferința video</span></h3>
+
+      <video id="video" controls>
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support this video.
+      </video>
+
+      <a id="scroller-link" href="#section"><span id="scroller"></span></a>
+    </header>
+
+    <section id="section">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit
+        amet blandit neque. Aliquam dignissim quam non sapien varius, eget
+        commodo quam eleifend. Donec ullamcorper ac nisl eget molestie. Nunc sit
+        amet aliquet leo, at feugiat nisl. Donec sollicitudin, mi eu luctus
+        hendrerit, dolor nulla varius mauris, ut egestas purus justo in enim.
+        Fusce scelerisque lectus leo, sed luctus purus hendrerit vulputate. Sed
+        id finibus felis. Vivamus varius fringilla tellus, ac molestie erat
+        consectetur in. Aenean pulvinar pharetra odio, non auctor turpis
+        imperdiet at. Pellentesque sodales quis neque quis sagittis.
+      </p>
+
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+      </ul>
+    </section>
+
+    <footer>
+      <span id="copyright">Copyright © 2020</span>
+      <span id="contact">contact@email.com</span>
+    </footer>
+
+    <%- include('_menuScript.ejs') %>
+  </body>
+</html>
