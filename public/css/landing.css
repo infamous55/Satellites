@@ -151,6 +151,31 @@ p {
   font-weight: 300;
 }
 
+#wsw {
+  max-height: 3rem;
+  width: auto;
+}
+
+#wsw-link {
+  display: block;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1;
+}
+
+#wsw-link,
+#wsw-link:link,
+#wsw-link:visited,
+#wsw-link:hover,
+#wsw-link:active {
+  text-decoration: none;
+  color: #f2efe9;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 1500px) {
   #main-content h1 {
     font-size: 3rem;
@@ -195,6 +220,7 @@ p {
     align-self: center;
     letter-spacing: 0.2rem;
   }
+
   #left p {
     align-self: center;
   }
@@ -215,6 +241,9 @@ p {
     width: 100%;
     height: 60%;
     background-color: #564e58;
+  }
+  #wsw {
+    display: none;
   }
 }
 

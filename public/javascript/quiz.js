@@ -141,7 +141,7 @@ const resetQuiz = () => {
             'Rezultatul tău este:';
           document.getElementById('next').innerText = 'Mai încearcă!';
         }
-        console.log(correctAnswers);
+        // console.log(correctAnswers);
       } else {
         alert('Alege un răspuns.');
       }
