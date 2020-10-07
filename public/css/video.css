@@ -94,8 +94,8 @@ h3 {
 }
 
 #video {
-  max-width: 80%;
-  height: auto;
+  width: 90%;
+  height: 50%;
   margin: 1.5rem;
 }
 
