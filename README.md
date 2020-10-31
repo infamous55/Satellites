@@ -1,5 +1,3 @@
 # Sateliti Artificiali
 
-Almost done.
-
-Got to change the README.
+  Site is hosted up on [https://satellites-antipa.herokuapp.com/]https://satellites-antipa.herokuapp.com.
