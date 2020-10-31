@@ -1,3 +1,3 @@
 # Sateliti Artificiali
 
-  Site is hosted up on [https://satellites-antipa.herokuapp.com/]https://satellites-antipa.herokuapp.com.
+  Site is hosted up on https://satellites-antipa.herokuapp.com.
